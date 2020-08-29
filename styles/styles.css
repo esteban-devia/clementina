@@ -124,7 +124,8 @@
         margin: 0 1.4rem;
     }
     
-    .active {
+    .menu .active,
+    .menu.menu-mobile .active {
         color: #262626;
         border-bottom: 0.3rem solid #b9cc00;
     }
@@ -146,6 +147,11 @@
     .menu-mobile a {
         margin: 1rem;
         color: #707070;
+    }
+    
+    .menu a:hover,
+    .menu.menu-mobile a:hover {
+        border-bottom: 0.3rem solid #b9cc00;
     }
     
     .formulary input {
@@ -638,6 +644,136 @@
     .info ul {
         list-style: none;
         padding: 0;
+    }
+    
+    .mod-domicilio {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 75vh;
+        position: fixed;
+        top: 6rem;
+        z-index: 1;
+    }
+    
+    .box-dom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #F8F8F8;
+        border-radius: 2rem;
+        padding-bottom: 1rem;
+        box-shadow: 0 -3px 6px #00000029;
+    }
+    
+    .box-dom h1 {
+        font-family: 'montserrat-extrabold', sans-serif;
+        font-size: 3rem;
+        color: #262626;
+        margin: 1rem;
+    }
+    
+    .box-dom img {
+        width: 90%;
+    }
+    
+    .close-mod {
+        position: fixed;
+        align-self: flex-end;
+        margin: 2rem;
+        font-size: 2rem;
+    }
+    
+    .logIn {
+        display: none;
+        position: fixed;
+        top: 1rem;
+        width: 100%;
+        justify-content: center;
+        z-index: 1;
+    }
+    
+    .loginMod {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 2rem;
+        background: #FFFFFF;
+        border-radius: 2rem;
+        padding: 2rem;
+        box-shadow: 3px 0 6px #00000029;
+    }
+    
+    .loginMod img {
+        width: 70px;
+    }
+    
+    .loginMod h1 {
+        margin-bottom: 0;
+        font-family: 'montserrat-extrabold', sans-serif;
+        font-size: 1.8rem;
+        color: #262626;
+    }
+    
+    .loginMod p {
+        font-family: 'open-sans-semibold';
+        color: #333333;
+    }
+    
+    .loginForm {
+        margin: 2rem;
+    }
+    
+    .loginData {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .loginData label {
+        font-family: 'montserrat-semibold';
+        color: #333333;
+        margin-bottom: 0.5rem;
+    }
+    
+    .loginData input {
+        background: #DFDFDF;
+        border: 0;
+        height: 2.8rem;
+        border-radius: 2rem;
+        margin-bottom: 1rem;
+        padding: 0 1rem;
+        outline: none;
+    }
+    
+    .loginAdv {
+        font-family: 'open-sans-semibold', sans-serif;
+        color: #333333;
+        margin-bottom: 4rem;
+    }
+    
+    #newPass {
+        font-size: 1rem;
+        font-style: italic;
+        margin-left: 3rem;
+        text-decoration: underline;
+    }
+    
+    #register {
+        margin-left: 28%;
+        border: 0;
+    }
+    
+    .loginMod p a {
+        font-family: 'open-sans-bold', sans-serif;
+        color: #4C5800;
+        text-decoration: underline;
+    }
+    
+    .closeModReg {
+        position: fixed;
+        align-self: flex-end;
+        font-size: 2rem;
     }
     
     @media screen and (max-width: 1366px) {

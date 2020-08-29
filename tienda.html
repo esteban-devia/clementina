@@ -19,8 +19,8 @@
             </div>
 
             <div class="topbar-right">
-                <a href="" class="login-carrito domicilio">¿Cuánto vale tu domicilio? <i class="fas fa-hand-holding-usd"></i></a>
-                <a href="" class="login-carrito">Ingresa / Regístrate <i class="far fa-user"></i></a>
+                <a href="javascript:void(0)" class="login-carrito domicilio" onclick="openMod()">¿Cuánto vale tu domicilio? <i class="fas fa-hand-holding-usd"></i></a>
+                <a href="javascript:void(0)" class="login-carrito" onclick="openModReg()">Ingresa / Regístrate <i class="far fa-user"></i></a>
                 <a href="" class="login-carrito">Tu compra <i class="fas fa-shopping-basket"></i></a>
             </div>
         </div>
@@ -35,7 +35,7 @@
                 <a href="quienes-somos.html">Quiénes somos</a>
                 <a href="contacto.html">Contáctanos</a>
             </div>
-            <a href="javascript:void(0)" class="menu-icon" onclick="myFunction()"><i class="fas fa-bars"></i></a>
+            <a href="javascript:void(0)" class="menu-icon" onclick="displayMenu()"><i class="fas fa-bars"></i></a>
             <div class="formulary">
                 <form id="search">
                     <input type="text" placeholder="Buscar producto">
@@ -181,6 +181,7 @@
             </div>
         </div>
     </section>
+
     <footer>
         <div class="logo-footer">
             <img src="images/footer/logo-footer.png" alt="logo clementina">
@@ -210,8 +211,43 @@
             </div>
         </div>
     </footer>
-    <script src="js/main.js"></script>
 
+    <section class="mod-domicilio">
+        <div class="box-dom">
+            <h1>¿Cuánto vale mi domicilio?</h1>
+            <a href="javascript:void(0)" class="close-mod" onclick="closeMod()"><i class="fas fa-times"></i></a>
+            <img src="images/footer/mapa-domicilios.png" alt="">
+        </div>
+    </section>
+
+    <section class="logIn">
+        <div class="loginMod">
+            <img src="images/footer/login.png" alt="">
+            <a href="javascript:void(0)" class="closeModReg" onclick="closeModReg()"><i class="fas fa-times"></i></a>
+            <h1>Ingresar con tu cuenta</h1>
+            <p>Para realizar tu pedido debes identificarte</p>
+            <form action="" class="loginForm">
+                <div class="loginData">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" name="emailaddress" id="email" required>
+                </div>
+                <div class="loginData">
+                    <label for="passw">Password</label>
+                    <input type="password" name="passw" id="passw" minlength="5" maxlength="10" required>
+                </div>
+                <div class="loginAdv">
+                    <input type="checkbox" name="connected" id="connected" required>
+                    <label for="connected">Mantenerme conectado</label>
+                    <a href="new-pass.html" id="newPass">Olvidé mi contraseña</a>
+                </div>
+                <button class="add-item" id="register">Ingresar</button>
+            </form>
+            <hr>
+            <p>¿Aún no tienes cuenta? <a href="resitro.html">Registrate</a></p>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>
